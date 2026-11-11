@@ -490,3 +490,16 @@ body.sketch::after, body.sketch .fireflies { opacity: 0; }
 .chapter .car-track .art { flex: 0 0 min(300px, 72vw); }
 .chapter .art-btn { aspect-ratio: 4 / 3; background: #fbf7ec; }
 .chapter .art-btn img { object-fit: contain; }
+
+/* ---------- Bouton retour en haut ---------- */
+.to-top {
+  position: fixed; right: 22px; bottom: 22px; z-index: 70;
+  width: 48px; height: 48px; border: 0; border-radius: 50%; cursor: pointer;
+  background: var(--accent); color: var(--on-accent); font-size: 1.4rem; font-weight: 700; line-height: 1;
+  box-shadow: 0 8px 20px rgba(0,0,0,.4);
+  opacity: 0; visibility: hidden; transform: translateY(12px);
+  transition: opacity .3s, transform .3s, visibility .3s, background-color .9s ease, color .9s ease;
+}
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { transform: translateY(-3px); }
+.to-top:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }

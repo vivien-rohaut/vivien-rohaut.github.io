@@ -337,4 +337,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     document.body.appendChild(layer);
   }
+  /* 10. Bouton « retour en haut » (créé ici pour fonctionner sur toutes les pages) */
+  const topBtn = document.createElement("button");
+  topBtn.type = "button";
+  topBtn.className = "to-top";
+  topBtn.setAttribute("aria-label", "Retour en haut de la page");
+  topBtn.innerHTML = "↑";
+  document.body.appendChild(topBtn);
+  const updateTopBtn = () => topBtn.classList.toggle("show", window.scrollY > 600);
+  window.addEventListener("scroll", updateTopBtn, { passive: true });
+  updateTopBtn();
+  topBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+  });
 });
