@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catharsis – Vivien Rohaut</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <main class="project">
+    <a class="back" href="index.html#projets">← Retour aux projets</a>
+
+    <h1 data-reveal>Catharsis</h1>
+    <p data-reveal>Entre metteur en scène d'une pièce de théâtre et otage d'un dieu capricieux.</p>
+
+    <div class="buttons" data-reveal>
+      <a class="btn" href="https://inkscience.itch.io/catharsis" target="_blank" rel="noopener">▶ Voir sur itch.io</a>
+    </div>
+
+    <img class="cover" data-reveal src="images/catharsis.jpg" alt="Image principale de Catharsis">
+
+    <div class="facts">
+      <div data-reveal><strong>Équipe</strong>6 personnes</div>
+      <div data-reveal><strong>Durée</strong>1 semaine</div>
+      <div data-reveal><strong>Mon rôle</strong>Game design</div>
+    </div>
+
+    <div class="art-group wide" data-reveal>
+      <div class="art-head">
+        <h3>Le jeu en images</h3>
+        <span class="art-count"></span>
+      </div>
+      <div class="carousel">
+        <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
+        <div class="car-track" tabindex="0" role="region" aria-label="Le jeu en images">
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Capture d'écran – image 1">
+                <img src="images/catharsis/capture-1.jpg" alt="Capture d'écran, image 1">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Capture d'écran – image 2">
+                <img src="images/catharsis/capture-2.jpg" alt="Capture d'écran, image 2">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Capture d'écran – image 3">
+                <img src="images/catharsis/capture-3.jpg" alt="Capture d'écran, image 3">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Capture d'écran – image 4">
+                <img src="images/catharsis/capture-4.jpg" alt="Capture d'écran, image 4">
+              </button>
+            </figure>
+        </div>
+        <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
+      </div>
+    </div>
+
+    <!-- Mon travail : schémas, code, wireframes. Modifie data-caption pour décrire chaque image (par exemple « Wireframe du menu »). Copie ou supprime des blocs <figure> selon le nombre d'images. -->
+    <div class="art-group wide" data-reveal>
+      <div class="art-head">
+        <h3>Mon travail</h3>
+        <span class="art-count"></span>
+      </div>
+      <div class="carousel">
+        <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
+        <div class="car-track" tabindex="0" role="region" aria-label="Mon travail">
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Mon travail – image 1">
+                <img src="images/catharsis/travail-1.jpg" alt="Mon travail, image 1">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Mon travail – image 2">
+                <img src="images/catharsis/travail-2.jpg" alt="Mon travail, image 2">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Mon travail – image 3">
+                <img src="images/catharsis/travail-3.jpg" alt="Mon travail, image 3">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Mon travail – image 4">
+                <img src="images/catharsis/travail-4.jpg" alt="Mon travail, image 4">
+              </button>
+            </figure>
+        </div>
+        <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
+      </div>
+    </div>
+
+    <h2 data-reveal>Le défi de design</h2>
+    <p data-reveal>Créer une expérience narrative qui fonctionne comme un visual novel, mais avec un aspect presque cinématique.</p>
+
+    <h2 data-reveal>Ma solution</h2>
+    <p data-reveal>J'ai conçu une partie du système d'enchaînement des événements et de changement de scène, et j'ai réalisé une partie de l'intégration des assets.</p>
+
+    <h2 data-reveal>Ce que j'ai appris</h2>
+    <p data-reveal>La prochaine fois, je passerais plus de temps à construire un système plus structuré et plus simple d'utilisation, pour accélérer l'intégration.</p>
+
+    <!--
+      Pour ajouter le jeu jouable directement dans la page :
+      1. Sur la page itch.io du jeu, ouvre « Edit game », puis « Widget » (ou « Embed »).
+      2. Copie le code iframe fourni par itch.io.
+      3. Colle-le ici, avec un titre :
+         <h2 data-reveal>Jouer directement</h2>
+         <div class="itch-embed" data-reveal><iframe src="https://itch.io/embed/NUMERO_DU_JEU" width="552" height="167"></iframe></div>
+    -->
+  </main>
+
+</body>
+</html>

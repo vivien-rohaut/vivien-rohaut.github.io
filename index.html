@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vivien Rohaut – Game Designer</title>
+  <meta name="description" content="Portfolio de Vivien Rohaut, étudiant en game design à e-artsup Lyon.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+
+  <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+  <!-- MENU LATÉRAL -->
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#accueil">Vivien<br>Rohaut</a>
+    <p class="role">Game Designer</p>
+
+    <nav class="side-nav">
+      <a href="#accueil" class="active"><span class="dot"></span>Accueil</a>
+      <a href="#projets"><span class="dot"></span>Projets</a>
+      <a href="#art"><span class="dot"></span>Dessin</a>
+      <a href="#cv"><span class="dot"></span>CV</a>
+      <a href="#apropos"><span class="dot"></span>À propos</a>
+      <a href="#contact"><span class="dot"></span>Contact</a>
+    </nav>
+
+    <div class="side-footer">
+      <a href="mailto:viviane-rohaut@outlook.fr">viviane-rohaut@outlook.fr</a>
+      <a href="https://viviwise.itch.io/" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://www.linkedin.com/in/vivien-rohaut-04922b308" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </aside>
+
+  <main class="content">
+
+    <!-- ACCUEIL -->
+    <section id="accueil" class="hero">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow" data-reveal>Vivien Rohaut · Game Designer</p>
+          <h1 data-reveal>
+            Je conçois des expériences de jeu
+            <br><span class="soft">qui donnent envie de rejouer.</span>
+          </h1>
+          <p class="lead" data-reveal>Étudiant en 3<sup>e</sup> année de Game Design à e-artsup Lyon. Je dessine mes idées pour les rendre concrètes dès la préproduction. Je recherche un stage en Game Design.</p>
+          <div class="buttons" data-reveal>
+            <a class="btn" href="#projets">Voir mes projets</a>
+            <a class="btn btn-outline" href="#cv">Lire mon CV</a>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <div class="portrait-frame">
+            <svg class="portrait-silhouette" viewBox="0 0 200 250" aria-hidden="true" focusable="false">
+              <path class="sil-body" d="M10 250 C10 178 55 148 100 148 C145 148 190 178 190 250 Z"/>
+              <circle class="sil-head" cx="100" cy="90" r="48"/>
+            </svg>
+            <span class="portrait-hint">Ma photo ici</span>
+            <img src="images/vivien.jpg" alt="Portrait de Vivien Rohaut">
+          </div>
+          <span class="portrait-badge">3<sup>e</sup> année · e-artsup Lyon</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets">
+      <h2 data-reveal>Projets</h2>
+      <p class="section-intro" data-reveal>Retrouvez mes jeux et mes projets sur itch.io. Cliquez sur une carte pour voir mon travail de conception.</p>
+
+      <div class="grid">
+
+        <article class="card" data-reveal>
+          <a class="card-link" href="la-casa-leone.html">
+            <div class="thumb"><img src="images/la-casa-leone.jpg" alt="Capture de La Casa Leone"></div>
+            <div class="card-body">
+              <h3>La Casa Leone</h3>
+              <p>Sensibiliser au harcèlement scolaire avec des minions animaux dans un restaurant.</p>
+              <span class="tags">6 personnes · 10 semaines</span>
+              <span class="card-role">Rôle : Game design, level design, développement, UI et art</span>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="mini-btn" href="https://viviwise.itch.io/la-casa-leone" target="_blank" rel="noopener">▶ Voir sur itch.io</a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <a class="card-link" href="catharsis.html">
+            <div class="thumb"><img src="images/catharsis.jpg" alt="Capture de Catharsis"></div>
+            <div class="card-body">
+              <h3>Catharsis</h3>
+              <p>Entre metteur en scène d'une pièce de théâtre et otage d'un dieu capricieux.</p>
+              <span class="tags">6 personnes · 1 semaine</span>
+              <span class="card-role">Rôle : Game design</span>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="mini-btn" href="https://inkscience.itch.io/catharsis" target="_blank" rel="noopener">▶ Voir sur itch.io</a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <a class="card-link" href="enquetes-toxiques.html">
+            <div class="thumb"><img src="images/enquetes-toxiques.jpg" alt="Capture de Enquêtes Toxiques"></div>
+            <div class="card-body">
+              <h3>Enquêtes Toxiques</h3>
+              <p>Quand Londris semble en proie à un mystérieux tueur en série, vous pouvez changer les choses.</p>
+              <span class="tags">8 personnes · 1 mois</span>
+              <span class="card-role">Rôle : Game design, level design et développement</span>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="mini-btn" href="https://kaci2000.itch.io/les-enquetes-toxiques" target="_blank" rel="noopener">▶ Voir sur itch.io</a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <a class="card-link" href="carrot-invaders.html">
+            <div class="thumb"><img src="images/carrot-invaders.jpg" alt="Capture de Carrot Invaders"></div>
+            <div class="card-body">
+              <h3>Carrot Invaders</h3>
+              <p>AU SECOURS, ma planète se fait envahir par des lapins mutants !</p>
+              <span class="tags">1 personne · 2 semaines</span>
+              <span class="card-role">Rôle : Tout : art, développement et design</span>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="mini-btn" href="https://viviwise.itch.io/carrotinvaders" target="_blank" rel="noopener">▶ Voir sur itch.io</a>
+          </div>
+        </article>
+
+        <article class="card" data-reveal>
+          <a class="card-link" href="atlantide-diorama.html">
+            <div class="thumb"><img src="images/atlantide-diorama.jpg" alt="Capture de Atlantide Diorama"></div>
+            <div class="card-body">
+              <h3>Atlantide Diorama</h3>
+              <p>Un diorama interactif de ruines sous-marines : le joueur tourne autour d'un point central pour explorer l'environnement sous tous ses angles.</p>
+              <span class="tags">2 personnes · 1 mois</span>
+              <span class="card-role">Rôle : Développement et game design</span>
+            </div>
+          </a>
+          <div class="card-actions">
+            <a class="mini-btn" href="atlantide-diorama.html#video">▶ Voir la vidéo</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="buttons itch-all" data-reveal>
+        <a class="btn btn-outline" href="https://viviwise.itch.io/" target="_blank" rel="noopener">Voir tous mes jeux sur itch.io</a>
+      </div>
+    </section>
+
+    <!-- DESSIN & CONCEPTION -->
+    <section id="art">
+      <h2 data-reveal>Dessin &amp; conception</h2>
+      <p class="section-intro" data-reveal>Je ne dessine pas pour illustrer un jeu fini : je dessine pour le penser. Un croquis permet de tester une idée en quelques minutes, de la faire comprendre à toute l'équipe et de corriger le tir avant d'avoir écrit une seule ligne de code. Voici trois façons dont le dessin nourrit ma conception.</p>
+
+      <!-- Pour ajouter une image : copie un bloc <figure class="art"> dans la série voulue et change le nom du fichier (images/art/…). -->
+
+      <article class="chapter">
+        <div class="chapter-text" data-reveal>
+          <span class="chapter-num">01</span>
+          <h3>Level design</h3>
+          <p class="chapter-why">Je dessine mes niveaux avant de les construire : plans de salles, parcours du joueur et ambiances. Cela me permet de tester le rythme et de placer les obstacles avant d'ouvrir le moteur.</p>
+          <ul class="chapter-points">
+            <li>Imaginer le parcours et ses obstacles (platforming, puzzles d'environnement)</li>
+            <li>Poser l'ambiance et la lisibilité d'un lieu</li>
+            <li>Donner à l'équipe une vision claire de l'espace à construire</li>
+          </ul>
+        </div>
+        <div class="art-group" data-reveal>
+          <div class="art-head">
+            <span class="art-hint">Cliquez sur une image pour l'agrandir</span>
+            <span class="art-count"></span>
+          </div>
+          <div class="carousel">
+            <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
+            <div class="car-track" tabindex="0" role="region" aria-label="Série : Level design">
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Plan d'une bibliothèque à deux étages : platforming et puzzle d'environnement, avec un monstre qui garde la sortie">
+                <img src="images/art/niveau-1.jpg" alt="Croquis d'un niveau de bibliothèque avec un monstre devant la sortie">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Ambiance d'une forêt violette et de sa créature lumineuse">
+                <img src="images/art/niveau-2.jpg" alt="Illustration d'une forêt violette avec une créature aux yeux jaunes">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Ambiance sous-marine : algues et lumière qui descend de la surface">
+                <img src="images/art/niveau-3.jpg" alt="Illustration d'un décor sous-marin aux algues vertes">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Intérieur d'une cabane de sorcière : croquis de la pièce et de ses interactions">
+                <img src="images/art/niveau-4.jpg" alt="Croquis d'une cabane avec un chaudron, des étagères et de petits personnages verts">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Ambiance : un dragon vert face à la mer et aux nuages">
+                <img src="images/art/niveau-5.jpg" alt="Illustration d'un dragon vert devant des vagues et un ciel nuageux">
+              </button>
+            </figure>
+            </div>
+            <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="chapter-text" data-reveal>
+          <span class="chapter-num">02</span>
+          <h3>Storyboard</h3>
+          <p class="chapter-why">Le storyboard fixe le rythme, la mise en scène et la lisibilité d'un moment clé : une séquence, une cinématique, un événement qui doit marquer le joueur.</p>
+          <ul class="chapter-points">
+            <li>Découper une séquence case par case et en régler le rythme</li>
+            <li>Vérifier que le joueur comprend ce qui se passe à l'écran</li>
+            <li>Partager une vision précise avant la production</li>
+          </ul>
+        </div>
+        <div class="art-group" data-reveal>
+          <div class="art-head">
+            <span class="art-hint">Cliquez sur une image pour l'agrandir</span>
+            <span class="art-count"></span>
+          </div>
+          <div class="carousel">
+            <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
+            <div class="car-track" tabindex="0" role="region" aria-label="Série : Storyboard">
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Storyboard d'une séquence autour du feu, case par case">
+                <img src="images/art/storyboard-1.jpg" alt="Storyboard en douze cases : un petit personnage vert et un feu">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Composition d'une scène : une dame aux rubans et un petit personnage au violon">
+                <img src="images/art/storyboard-2.jpg" alt="Croquis d'une scène avec une dame à rubans rouges et un petit personnage jouant du violon">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Illustration d'une scène d'action : un enfant fuit un canard, d'après une photo de référence">
+                <img src="images/art/storyboard-3.jpg" alt="Illustration d'un enfant en ciré jaune courant devant un canard">
+              </button>
+            </figure>
+            </div>
+            <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="chapter">
+        <div class="chapter-text" data-reveal>
+          <span class="chapter-num">03</span>
+          <h3>Du papier au moteur</h3>
+          <p class="chapter-why">Une idée dessinée doit ensuite fonctionner en jeu. Je la reproduis dans Unity pour vérifier qu'elle tient : dialogues, interactions, agencement d'une pièce.</p>
+          <ul class="chapter-points">
+            <li>Tester rapidement une idée de gameplay dans le moteur</li>
+            <li>Vérifier la lisibilité de l'interface et des interactions</li>
+            <li>Passer du croquis à un niveau jouable</li>
+          </ul>
+        </div>
+        <div class="art-group" data-reveal>
+          <div class="art-head">
+            <span class="art-hint">Cliquez sur une image pour l'agrandir</span>
+            <span class="art-count"></span>
+          </div>
+          <div class="carousel">
+            <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
+            <div class="car-track" tabindex="0" role="region" aria-label="Série : Du papier au moteur">
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Prototype dans Unity : personnage, dialogue, interface et interaction">
+                <img src="images/art/moteur-1.jpg" alt="Capture d'écran d'un prototype de jeu 2D avec un personnage à crête verte et une boîte de dialogue">
+              </button>
+            </figure>
+            <figure class="art">
+              <button type="button" class="art-btn" data-caption="Agencement d'une pièce vue de dessus dans Unity">
+                <img src="images/art/moteur-2.jpg" alt="Vue de dessus d'un niveau avec des meubles et des cadeaux">
+              </button>
+            </figure>
+            </div>
+            <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2 data-reveal>CV</h2>
+      <div class="cv-frame" data-reveal>
+        <iframe src="cv.pdf#view=FitH" title="CV de Vivien Rohaut"></iframe>
+        <p class="cv-fallback">Votre navigateur n'affiche pas le PDF ici ? <a href="cv.pdf" target="_blank" rel="noopener">Ouvrez-le dans un nouvel onglet</a>.</p>
+      </div>
+      <div class="buttons" data-reveal>
+        <a class="btn btn-outline" href="cv.pdf" target="_blank" rel="noopener">Ouvrir en plein écran</a>
+        <a class="btn btn-outline" href="cv.pdf" download>Télécharger (optionnel)</a>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos">
+      <h2 data-reveal>À propos</h2>
+      <div class="about-grid">
+        <div>
+          <p data-reveal>Étudiant en 3<sup>e</sup> année de Game Design à e-artsup Lyon, je viens du dessin : atelier à Poissy, année de prépa Entertainment à Bellecour École, et cinq ans de dessin animé et de design à TUMO Paris pendant le collège et le lycée.</p>
+          <p data-reveal>Ce bagage me permet de visualiser et de présenter rapidement mes idées de gameplay, d'ambiance et d'interface, avant même qu'un prototype existe.</p>
+
+          <h3 class="subtitle" data-reveal>Formation</h3>
+          <ul class="timeline" data-reveal>
+            <li><strong>e-artsup Lyon</strong><span>Game Design · 3<sup>e</sup> année</span></li>
+            <li><strong>Bellecour École</strong><span>Année de prépa Entertainment</span></li>
+            <li><strong>Atelier des Artistes, Poissy</strong><span>Formation en dessin</span></li>
+            <li><strong>TUMO Paris</strong><span>5 ans de dessin animé et de design (collège et lycée, en extrascolaire)</span></li>
+          </ul>
+        </div>
+
+        <div data-reveal>
+          <h3>Passions</h3>
+          <ul class="chips">
+            <li>Dessin</li><li>Animation 2D</li><li>Game design</li><li>Jeux vidéo</li>
+          </ul>
+          <h3>Outils</h3>
+          <ul class="chips">
+            <li>Unity</li><li>C#</li><li>Photoshop</li><li>Miro</li><li>Genially</li><li>GitKraken</li><li>Excel</li><li>Figma</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="favs">
+        <h3 class="subtitle" data-reveal>Mes jeux préférés</h3>
+        <p class="section-intro" data-reveal>Les jeux qui m'ont marqué, et pourquoi.</p>
+        <div class="fav-grid">
+          <article class="fav" data-reveal>
+            <h4>Frostpunk</h4>
+            <span class="fav-genre">Survie et gestion de cité</span>
+            <p class="fav-label">Pourquoi je l'aime</p>
+            <p class="fav-why">J'aime la partie gestion.</p>
+          </article>
+          <article class="fav" data-reveal>
+            <h4>Death's Door</h4>
+            <span class="fav-genre">Action-aventure</span>
+            <p class="fav-label">Pourquoi je l'aime</p>
+            <p class="fav-why">L'histoire est prenante, les combats sont agréables à faire et à refaire, et j'aime surtout sa direction artistique.</p>
+          </article>
+          <article class="fav" data-reveal>
+            <h4>Alice: Madness Returns</h4>
+            <span class="fav-genre">Action-aventure dans un conte sombre</span>
+            <p class="fav-label">Pourquoi je l'aime</p>
+            <p class="fav-why">J'aime beaucoup son style graphique ainsi que son histoire.</p>
+          </article>
+          <article class="fav" data-reveal>
+            <h4>Cult of the Lamb</h4>
+            <span class="fav-genre">Action-roguelite et gestion de communauté</span>
+            <p class="fav-label">Pourquoi je l'aime</p>
+            <p class="fav-why">Sa partie gestion et sa partie donjon fonctionnent très bien ensemble, et c'est ce qui m'accroche au jeu.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 data-reveal>Contact</h2>
+      <p class="section-intro" data-reveal>Un projet, une offre, une question ? Écrivez-moi.</p>
+      <div class="buttons" data-reveal>
+        <a class="btn" href="mailto:viviane-rohaut@outlook.fr">viviane-rohaut@outlook.fr</a>
+        <a class="btn btn-outline" href="https://viviwise.itch.io/" target="_blank" rel="noopener">itch.io</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/vivien-rohaut-04922b308" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Vivien Rohaut</p>
+    </footer>
+  </main>
+
+</body>
+</html>
