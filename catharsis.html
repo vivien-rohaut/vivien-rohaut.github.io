@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catharsis – Vivien Rohaut</title>
+  <meta name="description" content="Catharsis : une expérience narrative entre visual novel et cinématique. Projet de Vivien Rohaut, game designer.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -38,23 +40,23 @@
         <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
         <div class="car-track" tabindex="0" role="region" aria-label="Le jeu en images">
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 1">
-                <img src="images/catharsis/capture-1.jpg" alt="Capture d'écran, image 1">
+              <button type="button" class="art-btn" data-caption="Menu d'accueil : les cinq comédiens sur scène et les boutons Crédits, Commencer et Quitter">
+                <img src="images/catharsis/capture-1.jpg" alt="Capture d'écran du menu d'accueil avec cinq personnages sur une scène de théâtre">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 2">
-                <img src="images/catharsis/capture-2.jpg" alt="Capture d'écran, image 2">
+              <button type="button" class="art-btn" data-caption="Gameplay : les dialogues de la pièce se jouent sur scène, ici Méphisto qui invite Johann à s'approcher">
+                <img src="images/catharsis/capture-2.jpg" alt="Capture d'écran d'un dialogue entre Méphisto et Johann sur scène">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 3">
-                <img src="images/catharsis/capture-3.jpg" alt="Capture d'écran, image 3">
+              <button type="button" class="art-btn" data-caption="Moment actif : le joueur choisit la prochaine action d'un acteur sur scène ou d'un opérateur dans les coulisses">
+                <img src="images/catharsis/capture-3.jpg" alt="Capture d'écran de la phase de choix avec les actions proposées et la jauge d'émotion">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 4">
-                <img src="images/catharsis/capture-4.jpg" alt="Capture d'écran, image 4">
+              <button type="button" class="art-btn" data-caption="Dialogue de nuit : Béatrice exprime son désarroi sous la lune">
+                <img src="images/catharsis/capture-4.jpg" alt="Capture d'écran d'une scène de nuit avec Béatrice et un dialogue">
               </button>
             </figure>
         </div>
@@ -72,28 +74,31 @@
         <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
         <div class="car-track" tabindex="0" role="region" aria-label="Mon travail">
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 1">
-                <img src="images/catharsis/travail-1.jpg" alt="Mon travail, image 1">
-              </button>
-            </figure>
-            <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 2">
-                <img src="images/catharsis/travail-2.jpg" alt="Mon travail, image 2">
-              </button>
-            </figure>
-            <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 3">
-                <img src="images/catharsis/travail-3.jpg" alt="Mon travail, image 3">
-              </button>
-            </figure>
-            <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 4">
-                <img src="images/catharsis/travail-4.jpg" alt="Mon travail, image 4">
+              <button type="button" class="art-btn" data-caption="Mise en place du menu d'accueil dans Unity">
+                <img src="images/catharsis/travail-1.jpg" alt="Capture d'écran de Unity avec la scène du menu d'accueil et son inspecteur">
               </button>
             </figure>
         </div>
         <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
       </div>
+    </div>
+
+    <div class="art-head" data-reveal>
+      <h3>Mon travail en vidéo</h3>
+    </div>
+    <div class="video-player" data-reveal>
+      <video controls preload="metadata" playsinline>
+        <source src="videos/catharsis-dialogue.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <p class="video-note">Premier jet du système de dialogue et d'action des personnages. Ce système n'a pas été conservé, mais il a permis de réaliser les premiers tests.</p>
+    </div>
+    <div class="video-player" data-reveal>
+      <video controls preload="metadata" playsinline>
+        <source src="videos/catharsis-rideau.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <p class="video-note">Système de changement de scène : au lieu d'un simple fondu au noir, un rideau se ferme puis s'ouvre sur la scène suivante.</p>
     </div>
 
     <h2 data-reveal>Le défi de design</h2>
