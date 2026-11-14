@@ -503,3 +503,25 @@ body.sketch::after, body.sketch .fireflies { opacity: 0; }
 .to-top.show { opacity: 1; visibility: visible; transform: none; }
 .to-top:hover { transform: translateY(-3px); }
 .to-top:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+
+/* ---------- À propos : inspirations en vignettes + valeurs ---------- */
+.insp-block { margin-top: 56px; }
+.insp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.insp {
+  position: relative; overflow: hidden; background: var(--surface);
+  border-radius: var(--radius); padding: 22px 22px 8px 26px;
+}
+.insp::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: linear-gradient(var(--accent), var(--accent-2));
+}
+.insp h4 { font-size: 1.15rem; margin-bottom: 2px; }
+.insp-sub { display: block; color: var(--accent-2); font-size: .8rem; margin-bottom: 12px; }
+.insp p { color: var(--muted); font-size: .95rem; margin-bottom: 16px; }
+.insp .chips { margin-bottom: 14px; }
+.insp .chips li { background: var(--surface-2); font-size: .82rem; padding: 4px 12px; }
+.insp[data-reveal].visible { transition: opacity .7s ease, transform .25s ease, box-shadow .25s ease; }
+.insp[data-reveal].visible:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,.35); }
+.insp-outro { color: var(--muted); max-width: 760px; margin-top: 28px; font-style: italic; }
+.about-values { max-width: 760px; margin-top: 40px; padding-left: 18px; border-left: 3px solid var(--accent); }
+.about-values p { color: var(--muted); }

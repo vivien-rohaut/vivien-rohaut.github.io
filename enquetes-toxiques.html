@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Enquêtes Toxiques – Vivien Rohaut</title>
+  <meta name="description" content="Enquêtes Toxiques : un jeu d'enquête où le joueur compare des indices pour résoudre une série de meurtres. Projet de Vivien Rohaut, game designer.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌲</text></svg>">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -38,23 +40,23 @@
         <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
         <div class="car-track" tabindex="0" role="region" aria-label="Le jeu en images">
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 1">
-                <img src="images/enquetes-toxiques/capture-1.jpg" alt="Capture d'écran, image 1">
+              <button type="button" class="art-btn" data-caption="Salle d'autopsie : le joueur peut aller voir chaque cadavre pour l'inspecter">
+                <img src="images/enquetes-toxiques/capture-1.jpg" alt="Capture d'écran de la salle d'autopsie avec trois cadavres sur des tables">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 2">
-                <img src="images/enquetes-toxiques/capture-2.jpg" alt="Capture d'écran, image 2">
+              <button type="button" class="art-btn" data-caption="Le bureau : le joueur peut lire plusieurs livres, dont certains donnent des informations importantes pour l'enquête">
+                <img src="images/enquetes-toxiques/capture-2.jpg" alt="Capture d'écran d'un livre ouvert sur le bureau, avec des descriptions de blessures">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 3">
-                <img src="images/enquetes-toxiques/capture-3.jpg" alt="Capture d'écran, image 3">
+              <button type="button" class="art-btn" data-caption="Le rapport : après avoir inspecté et pris des notes, le joueur le remplit sur son bureau puis l'envoie à la police. Selon ses réponses, il y a 3 fins différentes">
+                <img src="images/enquetes-toxiques/capture-3.jpg" alt="Capture d'écran du rapport de conclusion sur un bloc-notes">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Capture d'écran – image 4">
-                <img src="images/enquetes-toxiques/capture-4.jpg" alt="Capture d'écran, image 4">
+              <button type="button" class="art-btn" data-caption="Le livre des plantes : le joueur y lit des informations et découvre les notes manuscrites de son personnage">
+                <img src="images/enquetes-toxiques/capture-4.jpg" alt="Illustration d'une page du livre des plantes consacrée au lotus sacré, avec des notes manuscrites">
               </button>
             </figure>
         </div>
@@ -72,28 +74,36 @@
         <button type="button" class="car-btn car-prev" aria-label="Images précédentes">‹</button>
         <div class="car-track" tabindex="0" role="region" aria-label="Mon travail">
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 1">
-                <img src="images/enquetes-toxiques/travail-1.jpg" alt="Mon travail, image 1">
+              <button type="button" class="art-btn" data-caption="Mon travail de développement : la comparaison entre les informations du livre et les blessures des cadavres. Un outil indique si deux informations sont compatibles (trait vert), partiellement compatibles (trait orange) ou non compatibles (trait rouge), pour que le joueur déduise la bonne solution">
+                <img src="images/enquetes-toxiques/travail-1.jpg" alt="Capture d'écran d'un livre ouvert à côté d'un cadavre, avec un trait en pointillés rouge qui relie une information à une blessure">
               </button>
             </figure>
             <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 2">
-                <img src="images/enquetes-toxiques/travail-2.jpg" alt="Mon travail, image 2">
-              </button>
-            </figure>
-            <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 3">
-                <img src="images/enquetes-toxiques/travail-3.jpg" alt="Mon travail, image 3">
-              </button>
-            </figure>
-            <figure class="art">
-              <button type="button" class="art-btn" data-caption="Mon travail – image 4">
-                <img src="images/enquetes-toxiques/travail-4.jpg" alt="Mon travail, image 4">
+              <button type="button" class="art-btn" data-caption="Mon travail de développement : sur le dossier de chaque cadavre, le joueur peut noter ce qu'il découvre ou, à l'inverse, ce qu'il n'y trouve pas">
+                <img src="images/enquetes-toxiques/travail-2.jpg" alt="Fiche d'autopsie avec des cases à cocher bon état et mauvais état">
               </button>
             </figure>
         </div>
         <button type="button" class="car-btn car-next" aria-label="Images suivantes">›</button>
       </div>
+    </div>
+
+    <div class="art-head" data-reveal>
+      <h3>Mon travail en vidéo</h3>
+    </div>
+    <div class="video-player" data-reveal>
+      <video controls preload="metadata" playsinline>
+        <source src="videos/enquetes-toxiques-navigation.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <p class="video-note">Mon travail sur la navigation du joueur : le passage d'un écran à un autre.</p>
+    </div>
+    <div class="video-player" data-reveal>
+      <video controls preload="metadata" playsinline>
+        <source src="videos/enquetes-toxiques-indices.mp4" type="video/mp4">
+        Votre navigateur ne peut pas lire cette vidéo.
+      </video>
+      <p class="video-note">Mon travail au début de la production : selon que le joueur passe sur une blessure du cadavre ou clique dessus, un indice différent est donné.</p>
     </div>
 
     <h2 data-reveal>Le défi de design</h2>
